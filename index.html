@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pizza Shop</title>
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white m-2 border-pink-500">
+
+
+    <!-- Login Form -->
+       <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-500 to-lime-500 px-4">
+            <div class="bg-white p-8 rounded-xl gap-5 shadow-lg w-full max-w-md text-center">
+                   <h1 class="text-3xl font-bold mb-16 text-green-700">🍕 Pizza Paradise Login</h1>
+
+                  <form action="/login" method="POST" class="space-y-4">
+                      <input type="text" name="username" placeholder="Username" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                      <input type="password" name="password" placeholder="Password" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+
+                   <div>
+                       <input type="submit" value="Submit" class="w-32 mt-6 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition duration-200 cursor-pointer">
+                   </div>
+    
+                 </form>
+                      <p class="mt-6 text-gray-600">Or, sign up with</p>
+       
+            </div>
+       </div>
+
+
+
+
+        <!-- after login page  main part -->
+
+      <div class="flex bg-white  justify-center items-center">
+            <div class="carousel h-[550px] bg-pink-100 w-[1200px]">
+
+                  <!--SLIDE 01-->
+                  <div id="slide1" class="carousel-item flex justify-center items-center relative w-full">
+                        <div class="flex justify-center items-center">
+                              <div class="flex w-[650px] ml-32 gap-5 flex-col">
+                                    <h2 class="text-black l text-6xl font-bold">Crispy And <br> Delicious Pizzas </h2>
+                                    <p class="text-[16px]  text-black w-[450px]">Craving a cheesy slice? We’ve got you covered with handcrafted pizzas made from the finest ingredients.Fast delivery, amazing taste — satisfaction guaranteed.Order now and treat yourself to the perfect bite!</p>
+                                    <button class="bg-[rgb(231,111,81)] font-semibold text-center text-[17px] w-40 hover:w-44 cursor-pointer rounded-xl text-white p-3 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Pizza Now</button>
+                              </div>
+                              <img class="h-[360px] mr-28" src="img/home-pizza.png" class="w-full" />
+                        </div>
+                       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                           <a href="#slide4" class="btn btn-circle">❮</a>
+                           <a href="#slide2" class="btn btn-circle">❯</a>
+                       </div>
+                  </div>
+
+
+
+                  <!--SLIDE 02-->
+
+                  <div id="slide2" class="carousel-item flex justify-center items-center relative w-full">
+                        <div class="flex justify-center items-center">
+                              <div class="flex w-[650px] ml-28 gap-5 flex-col">
+                                    <h2 class="text-black text-6xl font-bold">Crispy And <br> Delicious Pizzas</h2>
+                                    <p class="text-[16px]  text-black w-[450px]">Craving a cheesy slice? We’ve got you covered with handcrafted pizzas made from the finest ingredients.Fast delivery, amazing taste — satisfaction guaranteed.Order now and treat yourself to the perfect bite!</p>
+                                    <button class="bg-[rgb(231,111,81)] font-semibold text-center text-[17px] w-40 hover:w-44 cursor-pointer rounded-xl text-white p-3 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Pizza Now</button>
+                              </div>
+                              <img class="h-[350px] mr-20" src="img/product-2.png" class="w-full" />
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                  </div>
+
+
+                  <!--SLIDE 03-->
+
+                  <div id="slide3" class="carousel-item flex justify-center items-center relative w-full">
+                        <div class="flex justify-center items-center">
+                              <div class="flex w-[650px] ml-32 gap-5 flex-col">
+                                    <h2 class="text-black text-6xl font-bold">Crispy And <br> Delicious Pizzas</h2>
+                                    <p class="text-[16px] text-black w-[450px]">Craving a cheesy slice? We’ve got you covered with handcrafted pizzas made from the finest ingredients.Fast delivery, amazing taste — satisfaction guaranteed.Order now and treat yourself to the perfect bite!</p>
+                                    <button class="bg-[rgb(231,111,81)] font-semibold text-center text-[17px] w-40 hover:w-44 cursor-pointer rounded-xl text-white p-3 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Pizza Now</button>
+                              </div>
+                              <img class="h-[360px] mr-28" src="img/product-3.png" class="w-full" />
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                  </div>
+
+
+                  <!--SLIDE 04-->
+
+                  <div id="slide4" class="carousel-item flex justify-center items-center relative w-full">
+                        <div class="flex justify-center items-center">
+                              <div class="flex w-[650px] ml-32 gap-5 flex-col">
+                                    <h2 class="text-black text-6xl font-bold">Crispy And <br> Delicious Pizzas</h2>
+                                    <p class="text-[16px]  text-black w-[450px]">Craving a cheesy slice? We’ve got you covered with handcrafted pizzas made from the finest ingredients.Fast delivery, amazing taste — satisfaction guaranteed.Order now and treat yourself to the perfect bite!</p>
+                                    <button class="bg-[rgb(231,111,81)] font-semibold text-center text-[17px] w-40 hover:w-44 cursor-pointer rounded-xl text-white p-3 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Pizza Now</button>
+                              </div>
+                              <img class="h-[360px] mr-24" src="img/product-4.png" class="w-full" />
+                        </div>
+                         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                              <a href="#slide3" class="btn btn-circle">❮</a>
+                              <a href="#slide1" class="btn btn-circle">❯</a>
+                         </div>
+                  </div>
+            </div>
+      </div>
+
+
+
+      <!-- HEADING PART-->
+
+      <div class="mt-20 flex flex-col justify-center items-center  bg-white">
+            <h2 class="text-4xl text-black font-bold">Learn More about Our History</h2>
+            <p class="text-black justify-center text-center text-[17px] mt-5">The secret to success is the best ingredients <br>to make a better pizza. Today we strive for perfection, just as we <br> have been doing for 15 years when we first <br>opened the pizzeria in Lima - Peru.</p>
+            <p class="text-black mt-[10px]">...............</p>
+      </div>
+
+
+
+      <!-- delievry PART-->
+      <div class="mt-11 flex gap-28 justify-center items-center">
+            <div>
+                  <img class="h-80" src="img/contact-img.png" alt="">
+            </div>
+
+            <div>
+                  <img class="h-80" src="img/contact-img.png" alt="">
+            </div>
+
+            <div>
+                  <img class="h-80" src="img/contact-img.png" alt="">
+            </div>
+      </div>
+
+
+
+      <!-- HEADING PART-->
+      <div class="mt-36">
+            <h2 class="text-4xl text-center text-gray-900 font-bold">Popular Orders</h2>
+      </div>
+
+
+
+      <!-- Pizzas ordering part PART 01  -->
+
+      <div class="mt-12 flex flex-row justify-center items-center gap-3">
+            <div class="flex h-[540px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl rounded-full h-64" src="img/popular-1.png" alt="">
+                  <h2 class="text-gray-900 text-2xl font-bold">Margherita Pizza</h2>
+                  <p class="text-[16px] text-center p-2 text-black">Select the best prepared and delicious flavors. We have collected some popular recipes from around the world for you to choose your favorite.</p>
+                  <button  class="bg-[rgb(231,111,81)] rounded-lg font-semibold text-center text-[17px] w-28 hover:w-32 cursor-pointer text-white p-2 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Now</button>
+            </div>
+            <div class="flex h-[540px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl rounded-full h-64" src="img/popular-2.png" alt="">
+                  <h2 class="text-gray-900 text-2xl font-bold">Mushroom Pizza</h2>
+                  <p class="text-[16px] text-center p-2 text-black">Select the best prepared and delicious flavors. We have collected some popular recipes from around the world for you to choose your favorite.</p>
+                  <button  class="bg-[rgb(231,111,81)] rounded-lg font-semibold text-center text-[17px] w-28 hover:w-32 cursor-pointer text-white p-2 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Now</button>
+            </div>
+            <div class="flex h-[540px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl rounded-full h-64" src="img/popular-3.png" alt="">
+                  <h2 class="text-gray-900 text-2xl font-bold">Pepperoni Pizza</h2>
+                  <p class="text-[16px] text-center p-2 text-black">Select the best prepared and delicious flavors. We have collected some popular recipes from around the world for you to choose your favorite.</p>
+                  <button  class="bg-[rgb(231,111,81)] rounded-lg font-semibold text-center text-[17px] w-28 hover:w-32 cursor-pointer text-white p-2 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Now</button>
+            </div>
+      </div>
+
+
+
+      <!-- Pizzas ordering part PART 02 -->
+
+      <div class="mt-12 flex flex-row justify-center items-center gap-3">
+            <div class="flex h-[540px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl rounded-full h-64" src="img/product-5.png" alt="">
+                  <h2 class="text-gray-900 text-2xl font-bold">Veggie Pizza</h2>
+                  <p class="text-[16px] text-center p-2 text-black">Select the best prepared and delicious flavors. We have collected some popular recipes from around the world for you to choose your favorite.</p>
+                  <button  class="bg-[rgb(231,111,81)] rounded-lg font-semibold text-center text-[17px] w-28 hover:w-32 cursor-pointer text-white p-2 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Now</button>
+            </div>
+            <div class="flex h-[540px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl rounded-full h-64" src="img/product-1.png" alt="">
+                  <h2 class="text-gray-900 text-2xl font-bold">Supreme Pizza</h2>
+                  <p class="text-[16px] text-center p-2 text-black">Select the best prepared and delicious flavors. We have collected some popular recipes from around the world for you to choose your favorite.</p>
+                  <button  class="bg-[rgb(231,111,81)] rounded-lg font-semibold text-center text-[17px] w-28 hover:w-32 cursor-pointer text-white p-2 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Now</button>
+            </div>
+            <div class="flex h-[540px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl rounded-full h-64" src="img/popular-3.png" alt="">
+                  <h2 class="text-gray-900 text-2xl font-bold">BBQ Chicken Pizza</h2>
+                  <p class="text-[16px] text-center p-2 text-black">Select the best prepared and delicious flavors. We have collected some popular recipes from around the world for you to choose your favorite.</p>
+                  <button  class="bg-[rgb(231,111,81)] rounded-lg font-semibold text-center text-[17px] w-28 hover:w-32 cursor-pointer text-white p-2 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Now</button>
+            </div>
+      </div>
+
+
+
+      <!-- HEADING PART 03-->
+      <div class="mt-32">
+            <h2 class="text-4xl text-center text-gray-900 font-bold">Happy Clients says</span></h2>
+      </div>
+
+
+      
+
+       <!-- Users information PART-->
+     <div class="mt-2  flex flex-row justify-center items-center gap-2">
+          <div class="flex h-[470px] w-[350px] hover:w-[360px] p-2 flex-col justify-center items-center">
+            <img class="p-12" src="img/user-1.png" alt="">
+            <p class="text-[16px] mt-[-40px]  p-2 text-center text-black">"Absolutely delicious! The crust was perfectly crispy, and the toppings were fresh and flavorful. Best pizza I've had in a long time!"</p>
+            <p class="text-[rgb(35,166,240)]">Adam Smith</p>
+            <p class="text-[rgb(37,43,66)] mt-3 font-bold text-[15px]">Banker</p>
+          </div>
+
+
+          <div class="flex h-[470px] w-[350px] hover:w-[360px] p-2 flex-col justify-center items-center">
+            <img class="p-12 rounded-full" src="img/user-4.jpg" alt="">
+            <p class="text-[16px] mt-[-40px]  p-2 text-center text-black">"Tried the Margherita and Pepperoni—both were amazing. Friendly staff and great prices. Highly recommend this place!"</p>
+            <p class="text-[rgb(35,166,240)]">Ahammed Shorif</p>
+            <p class="text-[rgb(37,43,66)] mt-3 font-bold text-[15px]">Student</p>
+          </div>
+
+
+          <div class="flex h-[470px] w-[350px] hover:w-[360px] p-2 flex-col justify-center items-center">
+            <img class="p-12 rounded-full" src="img/user-7.jpg" alt="">
+            <p class="text-[16px] mt-[-40px] p-2 text-center text-black">This pizza shop never disappoints. The cheese is always melty, the crust is golden, and every bite is a treat!"</p>
+            <p class="text-[rgb(35,166,240)]">Samiul Islam</p>
+            <p class="text-[rgb(37,43,66)] mt-3 font-bold text-[15px]">Teacher</p>
+          </div>
+      </div>
+
+
+
+
+      <!-- Heading Part 04-->
+      <div class="mt-28">
+            <h2 class="text-4xl text-center text-gray-900 font-bold">Frequently Asked <span class="text-[rgb(231,111,81)]"> Questions</span></h2>
+      </div>
+
+
+
+      <!-- Rules and Regulations Part -->
+
+      <div class="flex shadow-sm mt-4 p-5 flex-row justify-center items-center gap-8">
+            <div class="h-[450px] w-[450px]">
+                  <img class="p-5 h-[450px] w-[450px]" src="img/faq.png" alt="">
+            </div>
+            <div class="text-[rgb(56,56,56)] mt-[-20px] h-[400px] w-[500px] leading-7 flex flex-col justify-center text-[18px]">
+                  <h2 class="font-semibold">What are the most important things I should know about ordering a Pizza?</h2>
+                  <h3 class="mt-4 border-[0.5px] p-2 border-gray-500 font-semibold">How do I place an order online?</h3>
+                  <h3 class="mt-4 border-[0.5px] p-2 border-gray-500 font-semibold">What’s the estimated delivery time?</h3>
+                  <h3 class="mt-4 border-[0.5px] p-2 border-gray-500 font-semibold">Is there a minimum order for delivery?</h3>
+                  <h3 class="mt-4 border-[0.5px] p-2 border-gray-500 font-semibold">Can I order for pickup instead of delivery?</h3>
+                  <h3 class="mt-4 border-[0.5px] p-2 border-gray-500 font-semibold">What should I do if my order is late or incorrect?</h3>
+                  
+            </div>
+      </div>
+
+
+
+
+      <!-- Footer Section -->
+
+      <div class="bg-[rgb(16,20,39)] mt-32 flex justify-center items-center justify-around h-[360px]">
+            <div class="flex flex-col  gap-7 items-center justify-center">
+                  <h3 class="text-[24px] font-semibold">Download Now   <span class="ml-[30px] text-[23px] font-medium">License</span></h3>
+                  <ul class="text-[18px] gap-5 flex font-semibold">
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>Careers</li>
+                        <li>Help</li>
+                        <li> Privacy Policy</li>
+                  </ul>
+                  <p class="text-[17px]">2025 Pizza-burg...  All rights reserved</p>
+            </div>
+
+            <div class="flex flex-col  gap-5 justify-center items-center">
+                  <h4 class="text-[22px]">Get the App</h4>
+                  <img src="img/ios.png" alt="">
+                  <img src="img/android.png" alt="">
+            </div>
+      </div>
+
+
+
+
+      <script>
+            function login() {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Dummy login check
+            if (username === 'admin' && password === '1234')
+               {
+                   document.getElementById('loginPage').classList.add('hidden');
+                   document.getElementById('mainContent').classList.remove('hidden');
+               }  
+            else 
+               {
+                   alert('Invalid credentials');
+               }
+           }
+      </script>
+
+
+</body>
+</html>
