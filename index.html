@@ -6,32 +6,35 @@
       <title>Pizza Shop</title>
       <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
       <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white m-2 border-pink-500">
 
 
     <!-- Login Form -->
-       <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-green-500 to-lime-500 px-4">
+      <div id="loginPage" class="min-h-screen bg-cover flex items-center justify-center bg-gradient-to-r from-green-500 to-lime-500 px-4">
             <div class="bg-white p-8 rounded-xl gap-5 shadow-lg w-full max-w-md text-center">
-                   <h1 class="text-3xl font-bold mb-16 text-green-700">🍕 Pizza Paradise Login</h1>
-
-                  <form action="/login" method="POST" class="space-y-4">
-                      <input type="text" name="username" placeholder="Username" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-
-                      <input type="password" name="password" placeholder="Password" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-
-                   <div>
-                       <input type="submit" value="Submit" class="w-32 mt-6 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition duration-200 cursor-pointer">
-                   </div>
-    
-                 </form>
-                      <p class="mt-6 text-gray-600">Or, sign up with</p>
-       
+                  <h1 class="text-4xl font-bold mb-14 text-green-600 ">🍕Pizza Paradise</h1>
+               <form onsubmit="login(event)" class="space-y-4">
+                  <input type="text" id="username" placeholder="Username" required
+                          class="w-full  px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+                  <input type="password" id="password" placeholder="Password" required
+                          class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+                  <div>
+                        <button type="submit" class="w-32 hover:w-36 mt-6 text-16px bg-green-700 hover:bg-green-900 text-white font-semibold py-3 rounded-lg transition duration-200 cursor-pointer">Login</button>
+                  </div>
+              </form>
+                 <p class="mt-6 text-gray-600">Or, sign up with...</p>
+                 <div class="flex mt-6 flex justify-center gap-3  items-center mb-2 space-x-4">
+                        <a href="https://www.google.com/" class="flex items-center gap-2 bg-white border border-gray-300 rounded-full p-4  text-sm font-semibold text-gray-700 hover:bg-gray-100 shadow"> <i class="fab fa-google text-red-500"></i> </a>
+                        <a href="https://www.facebook.com/" class="flex items-center gap-2 bg-[#3b5998] text-white rounded-full p-4 text-sm font-semibold hover:bg-[#334d84] shadow"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/" class="flex items-center gap-2 bg-[#1da1f2] text-white rounded-full p-4 text-sm font-semibold hover:bg-[#0d95e8] shadow">  <i class="fab fa-twitter"></i></a>
+                 </div>
             </div>
-       </div>
-
-
+      </div>
 
 
         <!-- after login page  main part -->
@@ -117,27 +120,36 @@
       <!-- HEADING PART-->
 
       <div class="mt-20 flex flex-col justify-center items-center  bg-white">
-            <h2 class="text-4xl text-black font-bold">Learn More about Our History</h2>
-            <p class="text-black justify-center text-center text-[17px] mt-5">The secret to success is the best ingredients <br>to make a better pizza. Today we strive for perfection, just as we <br> have been doing for 15 years when we first <br>opened the pizzeria in Lima - Peru.</p>
+            <h2 class="text-4xl text-black font-bold">Learn More about Our <span class="text-red-400">History</span></h2>
+            <p class="text-black justify-center w-[700px] text-center text-[17px] mt-5">Fizzashop was born from a simple love for pizza and the joy it brings to people. Founded by a passionate food enthusiast, our owner had a vision to create more than just another pizza shop — a place where quality, taste, and community come together. Every pizza we serve is a reflection of that vision.
+
+                                   From the very beginning, the goal was clear: use fresh, high-quality ingredients, hand-tossed dough, and bold, unforgettable flavors. Our owner personally oversees the process to ensure every slice meets the Fizzashop standard.
+
+                                  With years of experience in the food industry and a heart full of dedication, the founder of Fizzashop built this space to feel like home for pizza lovers.
+       
+                                  Whether you're dining in, taking out, or ordering online — you're part of the Fizzashop family.
+
+                                  We don’t just make pizza. We craft moments. One slice at a time.</p>
+
             <p class="text-black mt-[10px]">...............</p>
       </div>
 
 
 
       <!-- delievry PART-->
-      <div class="mt-11 flex gap-28 justify-center items-center">
-            <div>
-                  <img class="h-80" src="img/contact-img.png" alt="">
-            </div>
 
-            <div>
-                  <img class="h-80" src="img/contact-img.png" alt="">
-            </div>
+       <div class="flex flex-wrap mt-6 bg-pink-100 mx-14 w-11/12 justify-center md:justify-around items-center p-3 md:p-20">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl text-black md:text-5xl  mt-4 font-bold">Delievery with<br> in<span class="text-red-400"> 1 hour</span></h1>
+                <p class="mt-4 text-[16px] w-[450px] text-black">Craving a cheesy slice? We’ve got you covered with handcrafted pizzas made from the finest ingredients.Fast delivery, amazing taste — satisfaction guaranteed.Order now and treat yourself to the perfect bite!</p>
+                <button class="mt-4 font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-white bg-[rgb(231,111,81)] w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-[rgb(221,121,71)]">Order now</button>
 
-            <div>
-                  <img class="h-80" src="img/contact-img.png" alt="">
             </div>
-      </div>
+            <div class="mt-6 md:mt-0">
+                <img class="w-full max-w-xs md:max-w-[300px]" src="img/contact-img.png" alt="">
+            </div>
+        </div>
+
 
 
 
@@ -195,6 +207,140 @@
                   <button  class="bg-[rgb(231,111,81)] rounded-lg font-semibold text-center text-[17px] w-28 hover:w-32 cursor-pointer text-white p-2 shadow-lg hover:shadow-2xl hover:bg-[rgb(221,121,71)]">Order Now</button>
             </div>
       </div>
+
+
+
+      <!--Menu section -->
+
+            <!-- Pizza Menu Pricing Cards -->
+      <div class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                  <h2 class="text-4xl text-center font-bold mb-12">Our Pizza <span class="text-[rgb(231,111,81)]">Menu</span></h2>
+                  
+                  <div class="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
+                        <!-- Pricing Cards Container -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-3/4">
+                              
+                              <!-- Regular Pizza Card -->
+                              <div class="bg-white rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-transform duration-300">
+                                    <div class="text-[rgb(231,111,81)] text-5xl font-bold mb-4">$14.99</div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Regular Size</h3>
+                                    <div class="space-y-3 mb-8">
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Margherita - $14.99
+                                                <button onclick="addToCart('Regular', 'Margherita', '14.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Pepperoni - $15.99
+                                                <button onclick="addToCart('Regular', 'Pepperoni', '15.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Vegetarian - $14.99
+                                                <button onclick="addToCart('Regular', 'Vegetarian', '14.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Hawaiian - $16.99
+                                                <button onclick="addToCart('Regular', 'Hawaiian', '16.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                    </div>
+                              </div>
+
+                              <!-- Medium Pizza Card -->
+                              <div class="bg-white rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-transform duration-300">
+                                    <div class="text-[rgb(231,111,81)] text-5xl font-bold mb-4">$19.99</div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Medium Size</h3>
+                                    <div class="space-y-3 mb-8">
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Margherita - $19.99
+                                                <button onclick="addToCart('Medium', 'Margherita', '19.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Pepperoni - $20.99
+                                                <button onclick="addToCart('Medium', 'Pepperoni', '20.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Vegetarian - $19.99
+                                                <button onclick="addToCart('Medium', 'Vegetarian', '19.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Hawaiian - $21.99
+                                                <button onclick="addToCart('Medium', 'Hawaiian', '21.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                    </div>
+                              </div>
+
+                              <!-- Large Pizza Card -->
+                              <div class="bg-white rounded-2xl shadow-xl p-8 text-center hover:scale-105 transition-transform duration-300">
+                                    <div class="text-[rgb(231,111,81)] text-5xl font-bold mb-4">$24.99</div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Large Size</h3>
+                                    <div class="space-y-3 mb-8">
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Margherita - $24.99
+                                                <button onclick="addToCart('Large', 'Margherita', '24.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Pepperoni - $25.99
+                                                <button onclick="addToCart('Large', 'Pepperoni', '25.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Vegetarian - $24.99
+                                                <button onclick="addToCart('Large', 'Vegetarian', '24.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                          <p class="text-gray-600 border-b border-gray-200 pb-2">
+                                                Hawaiian - $26.99
+                                                <button onclick="addToCart('Large', 'Hawaiian', '26.99')" class="ml-2 text-[rgb(231,111,81)] hover:text-[rgb(221,121,71)]">
+                                                      <i class="fas fa-plus-circle"></i>
+                                                </button>
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <!-- Cart Section -->
+                        <div class="lg:w-1/4">
+                              <div class="bg-white rounded-2xl shadow-xl p-6 sticky top-4">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Your Order</h3>
+                                    <div id="cartItems" class="space-y-2 mb-4 max-h-[400px] overflow-y-auto">
+                                          <!-- Cart items will be inserted here by JavaScript -->
+                                    </div>
+                                    <div class="border-t border-gray-200 pt-4 mt-4">
+                                          <div class="flex justify-between items-center">
+                                                <span class="text-xl font-bold text-gray-800">Total:</span>
+                                                <span id="cartTotal" class="text-2xl font-bold text-[rgb(231,111,81)]">$0.00</span>
+                                          </div>
+                                          <button onclick="alert('Order placed successfully!')" class="w-full mt-4 bg-[rgb(231,111,81)] text-white py-3 rounded-xl font-semibold hover:bg-[rgb(221,121,71)]">
+                                                Place Order
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
 
 
 
@@ -264,7 +410,7 @@
 
       <!-- Footer Section -->
 
-      <div class="bg-[rgb(16,20,39)] mt-32 flex justify-center items-center justify-around h-[360px]">
+      <div class="bg-[rgb(14,14,25)] mt-32 flex justify-center items-center justify-around h-[360px]">
             <div class="flex flex-col  gap-7 items-center justify-center">
                   <h3 class="text-[24px] font-semibold">Download Now   <span class="ml-[30px] text-[23px] font-medium">License</span></h3>
                   <ul class="text-[18px] gap-5 flex font-semibold">
@@ -286,26 +432,7 @@
       </div>
 
 
-
-
-      <script>
-            function login() {
-                const username = document.getElementById('username').value;
-                const password = document.getElementById('password').value;
-
-                // Dummy login check
-            if (username === 'admin' && password === '1234')
-               {
-                   document.getElementById('loginPage').classList.add('hidden');
-                   document.getElementById('mainContent').classList.remove('hidden');
-               }  
-            else 
-               {
-                   alert('Invalid credentials');
-               }
-           }
-      </script>
-
+<script src="index.js"></script>
 
 </body>
 </html>
